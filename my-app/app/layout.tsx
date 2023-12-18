@@ -18,26 +18,21 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
 
-      <nav className="flex justify-between px-20 py-4 items-center bg-gradient-to-r from-black from-20% to-25% to-[#f94bad]">
+      <nav className="sticky top-0 z-50 flex justify-between px-20  items-center bg-gradient-to-r from-black from-20% via-[#f94bad]/70 via-30% to-40% to-[#f94bad]">
         <div className='italic'>
           <a href='#'>
-          <div className='flex'>
-            <h1 className="text-5xl text-[#f94bad] font-semibold">Angel
-            </h1>
-            <div className='place-self-center w-full h-full'>
-            <svg width="50x" height="50px" viewBox="0 0 1024 1024" class="ml-2" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M927.4 273.5v-95.4h-87.9V82.8h-201v95.3h-87.9v95.4h-78.5v-95.4h-88V82.8H183.2v95.3H95.3v95.4H16.7v190.6h78.6v95.4h75.3v95.3H246v95.3h87.9v95.4h100.5v95.3h153.9v-95.3h100.4v-95.4h88v-95.3H852.1v-95.3h75.3v-95.4h78.5V273.5z" fill="#f94bad"></path></g></svg>
-            </div>
+          <div className='flex h-24 my-2'>
+            <img src='assets/images/nav_logo.png'  />
           </div>
-        <h1 className="text-xl text-[#2bd9ff] font-medium">Internet Yamero</h1>
           </a>
         </div>
         <div className="flex items-center">
           <ul className="flex items-center space-x-4">
             <a href='#'>
-            <li className="font-semibold text-white hover:bg-white hover:text-[#2bd9ff] duration-200 rounded-xl py-8 px-2">KwaiiAngel</li>
+            <li className="font-semibold text-white hover:bg-white hover:text-[#2bd9ff] duration-150 py-8 px-2">KwaiiAngel</li>
             </a>
             <a href='#'>
-            <li className="font-semibold text-white hover:bg-black hover:text-red-500 duration-200 rounded-xl py-8 px-2">AmeChan</li>
+            <li className="font-semibold text-white hover:bg-black hover:text-red-500 duration-150 py-8 px-2">AmeChan</li>
             </a>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,6 +52,36 @@ export default function RootLayout({
         {children}
         
       </body>
+      <footer className='bg-[#f94bad] relative pt-8 pb-6'>
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap text-left lg:text-left">
+          <div className="w-full lg:w-6/12 px-4">
+            <h4 className="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+            <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div className="mt-6 lg:mb-0 mb-6">
+              <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i className="fab fa-twitter"></i></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i className="fab fa-facebook-square"></i></button><button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i className="fab fa-dribbble"></i></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i className="fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <div className="flex flex-wrap items-center md:justify-between justify-center">
+          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div className="text-sm text-blueGray-500 font-semibold py-1">
+              Copyright © <span id="get-current-year">2021</span>
+              <a href="https://www.creative-tim.com/product/notus-js" className="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by</a>  
+              <a href="https://www.creative-tim.com?ref=njs-profile" className="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
     </html>
   )
 }
