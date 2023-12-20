@@ -10,7 +10,9 @@ export default function landingOne(){
                 <AmeIntro />
                 <div className='w-full bg-[#f94bad] h-1'></div>
                 <KangelIntro />
+                <div className='w-full bg-[#f94bad] h-1 mb-12'></div>
                 <Gallery />
+                
             </div>
     )
 }

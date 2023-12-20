@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Twitter from '@/public/twitter.svg'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,10 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
 
-      <nav className="sticky top-0 z-50 flex justify-between px-20  items-center bg-gradient-to-r from-black from-20% via-[#f94bad]/70 via-30% to-40% to-[#f94bad]">
+      <nav className="sticky top-0 z-50 flex justify-between lg:px-20  items-center bg-black">
         <div className='italic'>
           <a href='#'>
-          <div className='flex h-24 my-2'>
+          <div className='flex h-16 my-2'>
             <img src='assets/images/nav_logo.png'  />
           </div>
           </a>
@@ -34,54 +35,27 @@ export default function RootLayout({
             <a href='#'>
             <li className="font-semibold text-white hover:bg-black hover:text-red-500 duration-150 py-8 px-2">AmeChan</li>
             </a>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-              </svg>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-            </li>
           </ul>
         </div>
       </nav>
         {children}
         
+          <footer className='bg-[#f94bad] flex justify-evenly py-4'>
+            <div className='flex justify-center space-x-6'>
+              <a href='https://twitter.com/x_angelkawaii_x?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor' target='_blank'>
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M8.78251 21C16.3295 21 20.4592 14.4577 20.4592 8.7938C20.4592 8.60974 20.4592 8.42569 20.4512 8.24163C21.2515 7.63927 21.9478 6.87795 22.5 6.01624C21.7637 6.35925 20.9714 6.58514 20.1391 6.6939C20.9874 6.16683 21.6357 5.32185 21.9478 4.31791C21.1555 4.81152 20.2751 5.16289 19.3387 5.35531C18.5864 4.5187 17.522 4 16.3455 4C14.0806 4 12.2399 5.92421 12.2399 8.29183C12.2399 8.62648 12.2799 8.95276 12.3439 9.27067C8.93457 9.09498 5.90936 7.37992 3.88455 4.78642C3.53241 5.42224 3.33233 6.15846 3.33233 6.94488C3.33233 8.43406 4.06062 9.74754 5.15706 10.5172C4.48479 10.4921 3.85254 10.2997 3.30032 9.98179C3.30032 9.99852 3.30032 10.0153 3.30032 10.0404C3.30032 12.1152 4.71689 13.8553 6.58964 14.2485C6.2455 14.3489 5.88535 14.3991 5.5092 14.3991C5.2451 14.3991 4.989 14.374 4.7409 14.3238C5.2611 16.0305 6.78171 17.2687 8.57443 17.3022C7.16587 18.4567 5.39716 19.1427 3.47639 19.1427C3.14826 19.1427 2.82013 19.126 2.5 19.0842C4.30872 20.2889 6.46959 21 8.78251 21Z" fill="#ffffff"></path> </g></svg>
+              </a>
+              <a href='https://store.steampowered.com/app/1451940/NEEDY_STREAMER_OVERLOAD/' target='_blank'>
+                <svg fill="#ffffff" width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>steam</title> <path d="M18.102 12.129c0-0 0-0 0-0.001 0-1.564 1.268-2.831 2.831-2.831s2.831 1.268 2.831 2.831c0 1.564-1.267 2.831-2.831 2.831-0 0-0 0-0.001 0h0c-0 0-0 0-0.001 0-1.563 0-2.83-1.267-2.83-2.83 0-0 0-0 0-0.001v0zM24.691 12.135c0-2.081-1.687-3.768-3.768-3.768s-3.768 1.687-3.768 3.768c0 2.081 1.687 3.768 3.768 3.768v0c2.080-0.003 3.765-1.688 3.768-3.767v-0zM10.427 23.76l-1.841-0.762c0.524 1.078 1.611 1.808 2.868 1.808 1.317 0 2.448-0.801 2.93-1.943l0.008-0.021c0.155-0.362 0.246-0.784 0.246-1.226 0-1.757-1.424-3.181-3.181-3.181-0.405 0-0.792 0.076-1.148 0.213l0.022-0.007 1.903 0.787c0.852 0.364 1.439 1.196 1.439 2.164 0 1.296-1.051 2.347-2.347 2.347-0.324 0-0.632-0.066-0.913-0.184l0.015 0.006zM15.974 1.004c-7.857 0.001-14.301 6.046-14.938 13.738l-0.004 0.054 8.038 3.322c0.668-0.462 1.495-0.737 2.387-0.737 0.001 0 0.002 0 0.002 0h-0c0.079 0 0.156 0.005 0.235 0.008l3.575-5.176v-0.074c0.003-3.12 2.533-5.648 5.653-5.648 3.122 0 5.653 2.531 5.653 5.653s-2.531 5.653-5.653 5.653h-0.131l-5.094 3.638c0 0.065 0.005 0.131 0.005 0.199 0 0.001 0 0.002 0 0.003 0 2.342-1.899 4.241-4.241 4.241-2.047 0-3.756-1.451-4.153-3.38l-0.005-0.027-5.755-2.383c1.841 6.345 7.601 10.905 14.425 10.905 8.281 0 14.994-6.713 14.994-14.994s-6.713-14.994-14.994-14.994c-0 0-0.001 0-0.001 0h0z"></path> </g></svg>
+              </a>
+              <a href='https://www.instagram.com/x.angelkawaii.x/?hl=en' target='_blank'>
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z" fill="#ffffff"></path> </g></svg>
+              </a>
+            </div>
+          </footer>
       </body>
-      <footer className='bg-[#f94bad] relative pt-8 pb-6'>
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap text-left lg:text-left">
-          <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
-            <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-              Find us on any of these platforms, we respond 1-2 business days.
-            </h5>
-            <div className="mt-6 lg:mb-0 mb-6">
-              <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                <i className="fab fa-twitter"></i></button><button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                <i className="fab fa-facebook-square"></i></button><button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                <i className="fab fa-dribbble"></i></button><button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                <i className="fab fa-github"></i>
-              </button>
-            </div>
-          </div>
-          
-        </div>
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
-          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
-              Copyright © <span id="get-current-year">2021</span>
-              <a href="https://www.creative-tim.com/product/notus-js" className="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by</a>  
-              <a href="https://www.creative-tim.com?ref=njs-profile" className="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
-            </div>
-          </div>
-        </div>
-      </div>
-      </footer>
+        
+
     </html>
   )
 }

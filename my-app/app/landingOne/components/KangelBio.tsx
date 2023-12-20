@@ -1,8 +1,8 @@
 export default function Components(){
     return(
-        <div className='text-[#f94bad] text-xl'>
+        <div className='text-[#f94bad] max-sm:text-sm md:text-xl'>
             <div>
-                <span className='text-5xl font-semibold'>
+                <span className='max-sm:xl md:text-5xl font-semibold'>
                     OMGkawaiiAngel — Kangel
                 </span><br/>
                 Birth date: 

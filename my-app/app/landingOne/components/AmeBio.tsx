@@ -1,8 +1,8 @@
 export default function Components(){
     return(
-    <div className='text-[#f94bad] text-xl'>
+    <div className='text-[#f94bad] max-sm:text-sm md:text-xl'>
                 <div>
-                    <span className='text-5xl font-semibold'>
+                    <span className='max-sm:text-xl md:text-5xl font-semibold'>
                         Ame-chan
                     </span><br/>
                     Birth date: 
@@ -39,10 +39,10 @@ export default function Components(){
                      but chooses not to fix. 
                     </span>
                      Throughout the game, she also frequently self-harms 
-                    <span className='text-red-500 italic text-2xl underline'>
+                    <span className='text-red-500 italic underline'>
                      if her stress is high
                     </span> and may take heavy drugs 
-                    <span className='text-red-500 italic text-2xl underline'>
+                    <span className='text-red-500 italic underline'>
                      if her mental darkness is high.
                     </span>
                       In certain routes she can also get addicted to any form of affection and even sexual activities,
